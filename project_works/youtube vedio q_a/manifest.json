@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Transcript Q&A",
+    "version": "1.0",
+    "description": "Ask questions about the current YouTube video using its transcript.",
+    "permissions": ["activeTab", "scripting", "storage"],
+    "host_permissions": ["https://www.youtube.com/*"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+      }
+    },
+    "background": {
+      "service_worker": "background.js"
+    }
+  }
